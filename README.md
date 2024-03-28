@@ -7,7 +7,11 @@ This is a minimal timer that alerts you after a specified amount of time has pas
 
 
 ## Installation
-The extension is currently being reviewed, so the current way to use it is to.
+You can either download the release or clone the repository and load it as a temporary add-on.
+
+### Download the release
+```https://github.com/cesartalen/timer-extension-firefox/releases/tag/v1.0.1```
+### Clone from source
 1. Download the extension files from the repository.
 2. Open Firefox and go to `about:debugging`.
 3. Go to "This Firefox" in the left sidebar `about:debugging#/runtime/this-firefox`
