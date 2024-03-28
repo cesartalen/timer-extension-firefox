@@ -5,7 +5,7 @@ let timerInput = document.getElementById('timerInput')
 startBtn.onclick = () => {
   let minutes = timerInput.value
 
-  if (minutes === '' || isNaN(minutes) || minutes <= 0) {
+  if (minutes === '' || isNaN(minutes) || minutes <= 0 || minutes[0] === '0') {
     statusText.innerText = 'Please enter a valid number'
     return
   }
