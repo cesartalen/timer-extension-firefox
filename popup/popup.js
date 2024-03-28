@@ -10,5 +10,7 @@ startBtn.onclick = () => {
     return
   }
 
+  browser.alarms.create('timer', { delayInMinutes: minutes })
+
   statusText.innerText = `Timer set for ${minutes} minutes`
 }
