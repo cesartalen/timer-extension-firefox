@@ -34,6 +34,18 @@ input[type=number] {
   cursor: pointer;
 }
 
+#stopBtn {
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px;
+  border-color: #B40000;
+}
+
+#stopBtn:hover {
+  border-color:#CC0000;
+  cursor: pointer;
+}
+
 #title {
   font-size: 20px;
   font-weight: bold;
