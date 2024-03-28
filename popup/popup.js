@@ -1,6 +1,7 @@
 let statusText = document.getElementById('statusText')
 let startBtn = document.getElementById('startBtn')
 let timerInput = document.getElementById('timerInput')
+let stopBtn = document.getElementById('stopBtn')
 
 startBtn.onclick = () => {
   let minutes = timerInput.value
@@ -10,7 +11,12 @@ startBtn.onclick = () => {
     return
   }
 
-  browser.alarms.create('timer', { delayInMinutes: parseInt(minutes) })
+  browser.alarms.create('timer', { delayInMinutes: parseInt(minutes) / 100 })
 
   statusText.innerText = `Timer set for ${minutes} minutes`
+}
+
+stopBtn.onclick = () => {
+  browser.alarms.clear('timer')
+  statusText.innerText = 'Timer stopped'
 }
